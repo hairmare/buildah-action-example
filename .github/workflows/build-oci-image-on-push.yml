@@ -10,6 +10,6 @@ jobs:
  
     steps:
     - uses: actions/checkout@v1
-    - uses: hairmare/buildah-action@0.1.0
+    - uses: hairmare/buildah-action@0.1.1
       with:
         tag: cowsay-hello:latest
