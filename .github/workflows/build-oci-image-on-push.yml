@@ -1,0 +1,15 @@
+name: Docker Image CI
+
+on: [push]
+
+jobs:
+
+  build:
+ 
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - uses: actions/checkout@v1
+    - uses: hairmare/buildah-action@0.1.0
+      with:
+        tag: cowsay-hello:latest
